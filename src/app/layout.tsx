@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
+import Header from "./components/Header";
 
 const inter = Nunito({ subsets: ["latin"] });
 
@@ -18,16 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header>
-          <div className="flex justify-between p-4 px-6 container mx-auto">
-            <Link href="/" className="font-bold">Job Board</Link>
-            <nav className="flex gap-4">
-              <Link href={"/login"}>Login</Link>
-              <Link href={"/new-listing"}>Post a Job</Link>
-            </nav>
-          </div>
-        </header>
-
+        <Header />
         {children}
       </body>
     </html>
