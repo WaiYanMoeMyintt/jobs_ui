@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="py-12">
+    <section className="container py-12">
       <h1 className="text-4xl font-extrabold text-center">
         Ready to find your <br /> Dream Job
       </h1>
